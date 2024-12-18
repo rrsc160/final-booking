@@ -1,0 +1,124 @@
+.seats-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.seats-chart-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+#chart-container {
+  width: 800px;
+  /* Fixed width */
+  height: 600px;
+  /* Fixed height */
+  flex-shrink: 0;
+  /* Prevent resizing */
+  background-color: rgb(62, 73, 136);
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  /* Stick to the top during scrolling */
+  top: 20px;
+  /* Offset for sticky positioning */
+}
+
+.selected-seats {
+  width: 400px;
+  /* Fixed width */
+  background-color: lightsteelblue;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: monospace;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  /* Prevent resizing */
+}
+
+/* .selected-seats {
+  width: 49%;
+  padding: 2px;
+  background-color: lightsteelblue;
+  border-radius: 11px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -78%;
+  margin-bottom: 66%;
+  margin-left: 164%;
+} */
+
+.selected-seats h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+.selected-seats ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.selected-seats .seat-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.selected-seats .seat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.selected-seats .seat-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.selected-seats .seat-id {
+  font-weight: bold;
+  color: #333;
+}
+
+.selected-seats .seat-category {
+  color: #7f8c8d;
+}
+
+.book-seats-btn {
+  padding: 10px 20px;
+  background-color:  #9370DB;
+  color: white;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-seats-btn:hover {
+  background-color: #27ae60;
+}
+
+.selected-seats li.no-seats {
+  text-align: center;
+  color: #7f8c8d;
+}
